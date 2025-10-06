@@ -6,4 +6,42 @@
     /* Chamando a Fonte */
     font-family: "Ubuntu", sans-serif;
     font-size: 12px;
+    
+    /* Bordas View */
+    border: solid 1px blue;
 }
+
+/* Layout App */
+.container-pai{
+    width: 200px;
+    height: 200px;
+
+    /* FlexBox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configurações dos Botões */
+.container-button{
+    width: 160px;
+    padding: 5px;
+    /* gap: 3px; */
+
+    /* FlexBox */
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    cursor: pointer;
+    /* width: 77px; */
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Desafio */
+/* Cabeçalho */
+/* Resultado */
+/* Rodapé */
