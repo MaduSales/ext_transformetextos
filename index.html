@@ -12,7 +12,10 @@
   <body>
     <!-- Estrutura do Programa -->
     <div class="container-pai">
-        <header class="cabecalho"></header> <!---Conteúdo alunos-->
+        <header class="cabecalho">
+          <img src="./icons/tt-icon16.jpg" alt="Imagem Logo">
+          <h1>TRANSFORME textos</h1>
+        </header> <!---Conteúdo alunos-->
         <input type="text" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite seu texto aqui" required>
         
         <div class="container-button">
@@ -20,9 +23,10 @@
             <button type="button" class="btn" id="btnMinuscula">minúscula</button>
         </div>
 
-        <div name="result" id="result" class="result">Resultado:</div>
+        <textarea name="result" id="result" class="result" placeholder="Resultado"></textarea>
+        <p class="rodape">Para mais informações, visite:</p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">mariamiranda.com.br</a>
     </div>
-    
     <!-- Link do Javascript -->
     <script src="script.js"></script>
   </body>

@@ -8,14 +8,13 @@
     font-size: 0.85rem;
     
     /* Bordas View */
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 }
 
 /* Layout App */
 .container-pai{
     width: 200px;
     height: 200px;
-
     /* FlexBox */
     display: flex;
     flex-direction: column;
@@ -27,21 +26,49 @@
 .container-button{
     width: 160px;
     padding: 5px;
-    /* gap: 3px; */
+    gap: 10px;
 
     /* FlexBox */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .btn{
     cursor: pointer;
     /* width: 77px; */
-    padding: 3px;
-    border-radius: 5px;
+    padding: 2px 9px;
+    border-radius: 2px;
+    border: solid 1px black;
 }
+
 
 /* Desafio */
 /* Cabeçalho */
+.cabecalho{
+    display: flex;
+    align-items: end;
+    gap: 7px;
+    padding: 7px;
+}
+
+.cabecalho h1{
+    font-size: 13px;
+}
+
+/*Entrada de Dados*/
+.input-text{
+    width: 167px;
+    padding: 2px 3px;
+}
+
 /* Resultado */
+.result{
+    resize: none;
+    width: 165px;
+    padding: 3px 0px 40px 5px;
+}
+
 /* Rodapé */
+.rodape{
+    margin-top: 5px;
+}
