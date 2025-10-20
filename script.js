@@ -24,4 +24,10 @@ window.document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("#result").innerHTML = " ";
         document.querySelector("#input-text").focus();
     });
+
+    // Botão-Extra: Inverter o texto
+    window.document.querySelector("#btnInverter").addEventListener("click", function(){
+        let inputText = document.querySelector("#input-text").value;
+        document.querySelector("#result").innerHTML = inputText.split("").reverse().join("")
+    });
 });
