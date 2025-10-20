@@ -23,23 +23,32 @@
 }
 
 /* Configurações dos Botões */
-.container-button{
+.container-button {
     width: 160px;
     padding: 5px;
-    gap: 10px;
 
     /* FlexBox */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* empilha as linhas, transformando em colunas*/
+    align-items: center; 
+    gap: 5px; 
 }
 
-.btn{
-    cursor: pointer;
-    /* width: 77px; */
-    padding: 2px 9px;
-    border-radius: 2px;
-    border: solid 1px black;
+.row {
+    display: flex;
+    justify-content: space-between; 
+    width: 110%; 
+    gap: 5px; 
 }
+
+.btn {
+    flex: 1; /* faz os botões ocuparem o mesmo espaço */
+    padding: 4px 0;
+    border-radius: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 
 
 /* Desafio */
