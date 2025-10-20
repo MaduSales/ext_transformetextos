@@ -12,8 +12,16 @@ window.document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("#result").innerHTML = inputText.toLowerCase();
     });
 
+    //Botão: Primeira Letra Maiúscula
     window.document.querySelector("#btnCapitalize").addEventListener("click", function(){
         let inputText = document.querySelector("#input-text").value;
         document.querySelector("#result").innerHTML = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+    });
+
+    // Botão: Limpar campos
+    window.document.querySelector("#btnLimpar").addEventListener("click", function(){
+        document.querySelector("#input-text").value = " ";
+        document.querySelector("#result").innerHTML = " ";
+        document.querySelector("#input-text").focus();
     });
 });
